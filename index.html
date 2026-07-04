@@ -251,7 +251,7 @@ function loadPanorama(foto){
 
     viewer = pannellum.viewer('panorama', {
         type: 'equirectangular',
-        panorama: '/images/' + foto + '.JPG',
+        panorama: '/images/' + encodeURIComponent(foto) + '.JPG',
         autoLoad: true,
         showZoomCtrl: true,
         showFullscreenCtrl: true
